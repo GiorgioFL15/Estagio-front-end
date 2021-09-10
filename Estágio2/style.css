@@ -1,0 +1,225 @@
+body{
+    padding: 0;
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    background-image: linear-gradient(to right, rgb(220, 20, 143), rgb(26, 29, 29));
+}
+
+/* Adicionando a tabela de impressão de carros*/
+.my-container{
+    display: flex;
+    width: 100%;
+    height: 400px;
+    background-color: linear-gradient(to right, rgb(220, 20, 143), rgb(26, 29, 29));
+    flex-flow: row;  
+    
+}
+
+.my-item {
+    height: 20px;
+    background-color: linear-gradient(to right, rgb(220, 20, 143), rgb(26, 29, 29));
+    padding: 5px;
+    border: 4px solid #fff;
+    flex-basis: 20%;
+    color: #fff;
+    
+}
+
+/*Criando div Global para ficar alinhado da esquerda para direita*/
+.global{
+  display: flex;
+}
+
+
+/* Adicionando o Formulário Excluir carros*/
+.box-excluir{
+  height: 200px;
+  width: 20%;
+  margin: 30px auto;
+  background-color: rgba(0, 0, 0, 0.6);
+  padding: 15px;
+  border-radius: 15px;
+  display: block;
+  position: relative;
+  color: #fff;
+
+}
+
+.box-excluir > legend {
+  height: 200px;
+  border: 1px solid palevioletred;
+  padding: 10px;
+  text-align: center;
+  background-color: palevioletred;
+  border-radius: 8px;
+  font-size: 16px;
+  width: 150px;
+  margin: auto;
+}
+
+.box-excluir > .fieldset{
+  border: 3px solid palevioletred;
+
+}
+
+.box-excluir input[type = submit]{
+  margin-top: 20px;
+}
+
+
+/*Criando Formulário Alteração*/
+
+.box-alterar{
+  height: 200px;
+  width: 20%;
+  margin: 30px auto;
+  background-color: rgba(0, 0, 0, 0.6);
+  padding: 15px;
+  border-radius: 15px;
+  display: block;
+  position: relative;
+  color: #fff;
+
+}
+
+.box-alterar > legend {
+  height: 200px;
+  border: 1px solid palevioletred;
+  padding: 10px;
+  text-align: center;
+  background-color: palevioletred;
+  border-radius: 8px;
+  font-size: 16px;
+  width: 150px;
+  margin: auto;
+}
+
+.box-alterar > .fieldset{
+  border: 3px solid palevioletred;
+
+}
+
+.box-alterar input[type = submit]{
+  margin-top: 20px;
+}
+
+/* Criando Formulário de Pesquisa*/
+
+.box-pesquisa{
+  height: 200px;
+  width: 20%;
+  margin: 30px auto;
+  background-color: rgba(0, 0, 0, 0.6);
+  padding: 15px;
+  border-radius: 15px;
+  display: block;
+  position: relative;
+  color: #fff;
+
+}
+
+.box-pesquisa > legend {
+  height: 200px;
+  border: 1px solid palevioletred;
+  padding: 10px;
+  text-align: center;
+  background-color: palevioletred;
+  border-radius: 8px;
+  font-size: 16px;
+  width: 150px;
+  margin: auto;
+}
+
+.box-pesquisa > .fieldset{
+  border: 3px solid palevioletred;
+
+}
+
+.box-pesquisa input[type = submit]{
+  margin-top: 20px;
+}
+
+
+/*Adicionando o Formulário de Carros*/ 
+.box{
+    color: #fff;
+    margin: 30px auto;
+    background-color: rgba(0, 0, 0, 0.6);
+    padding: 15px;
+    border-radius: 15px;
+    width: 20%;
+
+}
+
+  fieldset{
+      border: 3px solid palevioletred;
+
+  }
+
+  legend{ 
+    border: 1px solid palevioletred;
+    padding: 10px;
+    text-align: center;
+    background-color: palevioletred;
+    border-radius: 8px;
+  }
+
+  .inputBox{
+    position: relative;
+    margin-top: 20px;
+  }
+
+
+
+  .inputUser{
+    background: none;
+    border: none;
+    border-bottom: 1px solid white;
+    outline: none;
+    color: #fff;
+    font-size: 15px;
+    width: 100%;
+    letter-spacing: 2px;
+  }
+
+  .labelinput{
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    pointer-events: none;
+    transition: .5s;
+  }
+
+
+  .inputUser:focus ~.labelinput,
+  .inputUser:valid ~.labelinput{
+    top: -20px;
+    font-size: 12px;
+    color: palevioletred;
+  }
+
+  #data_fabricacao{
+  order: none;
+    padding: 8px;
+    border-radius: 10px;
+    outline: none;
+  }
+
+  /*Criando botoões*/
+
+  #submit{
+    background-image: linear-gradient(to right, rgb(220, 20, 143), rgb(220, 20, 143));
+    width: 100%;
+    border: none;
+    padding: 15px;
+    color: #fff;
+    font-size: 15px;
+    cursor: pointer;
+    border-radius: 10px;
+    
+  }
+  #submit:hover{
+    background-image: linear-gradient(to right, rgb(151, 16, 100), rgb(151, 16, 100));
+  }
+  
+
